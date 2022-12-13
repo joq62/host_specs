@@ -7,7 +7,7 @@
    {application_config,
     [{conbee,[{conbee_addr,"172.17.0.2"},
 	      {conbee_port,80},
-	      {conbee_key,"D83FA13F74"}]
+	      {conbee_key,"4B3F1542C5"}]
      }
     ]
    }
