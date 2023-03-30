@@ -32,6 +32,8 @@ check([{ok,[{host_spec,_Id,Info}]}|T])->
     true=proplists:is_defined(uid,Info),
     true=proplists:is_defined(passwd,Info),
     true=proplists:is_defined(application_config,Info),
+    true=proplists:is_defined(connect_node_name,Info),
+    true=proplists:is_defined(connect_node,Info),
    
     check(T).
 

@@ -4,6 +4,8 @@
   {ssh_port,22},
   {uid,"ubuntu"},
   {passwd,"festum01"},
-  {application_config,[]}
+  {application_config,[]},
+  {connect_node_name,"host"},
+  {connect_node,'host@c200'}
  ]
 }.
