@@ -8,7 +8,7 @@
     [{conbee,[{conbee_addr,"172.17.0.2"},
 	      {conbee_port,80},
 	      {conbee_key,"D83FA13F74"}]}]},
-   {connect_node_name,"host"},
-   {connect_node,'host@c100'}
+   {connect_node_name,"host_controller"},
+   {connect_node,'host_controller@c100'}
  ]
 }.

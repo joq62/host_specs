@@ -5,6 +5,6 @@
    {uid,"joq62"},
    {passwd,"festum01"},
    {application_config,[]},
-   {connect_node_name,"host"},
-   {connect_node,'host@c300'}]
+   {connect_node_name,"host_controller"},
+   {connect_node,'host_controller@c300'}]
 }.
