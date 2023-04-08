@@ -5,9 +5,9 @@
    {uid,"ubuntu"},
    {passwd,"festum01"},
    {application_config,
-    [{hw_conbee_app,[{conbee_addr,"172.17.0.2"},
-		     {conbee_port,80},
-		     {conbee_key,"4B3F1542C5"}]}]},
+    [{conbee,[{conbee_addr,"172.17.0.2"},
+	      {conbee_port,80},
+	      {conbee_key,"4B3F1542C5"}]}]},
    {connect_node_name,"host_controller"},
    {connect_node,'host_controller@c201'}
  ]
