@@ -1,6 +1,6 @@
 {host_spec,"c50",
  [{hostname,"c50"},
-   {local_ip,"192.168.1.50"},
+   {local_ip,"172.26.158.249"},
    {ssh_port,22},
    {uid,"joq62"},
    {passwd,"festum01"},
