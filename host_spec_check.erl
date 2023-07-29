@@ -9,7 +9,7 @@
 
 
 -define(Dir,".").
--define(FileExt,".spec").
+-define(FileExt,".host").
 
 %% --------------------------------------------------------------------
 %% Function: available_hosts()
@@ -24,16 +24,15 @@ start()->
 
 check([])->
     io:format("Success, OK ! ~n");
-check([{ok,[{host_spec,_Id,Info}]}|T])->
+check([{ok,[{host_spec,Info}]}|T])->
     io:format("Checking ~p~n",[Info]),
     true=proplists:is_defined(hostname,Info),
-    true=proplists:is_defined(local_ip,Info),
+    true=proplists:is_defined(ip,Info),
     true=proplists:is_defined(ssh_port,Info),
-    true=proplists:is_defined(uid,Info),
+    true=proplists:is_defined(user,Info),
     true=proplists:is_defined(passwd,Info),
     true=proplists:is_defined(application_config,Info),
-    true=proplists:is_defined(connect_node_name,Info),
-    true=proplists:is_defined(connect_node,Info),
+  
    
     check(T).
 
