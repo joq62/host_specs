@@ -10,7 +10,6 @@
 
 -define(Dir,".").
 -define(FileExt,".host").
--define(MapKeys,[application_config,hostname,ip,password,ssh_port,userid]).
 
 %% --------------------------------------------------------------------
 %% Function: available_hosts()
@@ -25,10 +24,16 @@ start()->
 
 check([])->
     io:format("Success, OK ! ~n");
-check([{ok,[Map]}|T])->
-    io:format("Checking ~p~n",[Map]),
-
-    ?MapKeys=lists:sort(maps:keys(Map)),
+check([{ok,[{host_spec,Info}]}|T])->
+    io:format("Checking ~p~n",[Info]),
+    true=proplists:is_defined(hostname,Info),
+    true=proplists:is_defined(ip,Info),
+    true=proplists:is_defined(ssh_port,Info),
+    true=proplists:is_defined(user,Info),
+    true=proplists:is_defined(passwd,Info),
+    true=proplists:is_defined(application_config,Info),
+  
+   
     check(T).
 
    
