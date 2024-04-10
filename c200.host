@@ -1,7 +1,0 @@
-#{hostname=>"c200",
-  ip=>"192.168.1.200",
-  ssh_port=>22,
-  userid=>"ubuntu",
-  password=>"festum01",
-  application_config=>[]
-}.
