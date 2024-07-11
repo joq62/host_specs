@@ -1,0 +1,5 @@
+#{id=>"c50",
+	hostname=>"c50",
+	host_node=>ctrl@c50,
+	application_config=>[]
+	}.

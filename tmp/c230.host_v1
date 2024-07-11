@@ -1,0 +1,7 @@
+#{hostname=>"c230",
+  ip=>"192.168.1.230",
+  ssh_port=>22,
+  userid=>"joq62",
+  password=>"ubuntu",
+  application_config=>[]
+}.

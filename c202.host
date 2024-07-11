@@ -1,10 +1,5 @@
-#{hostname=>"c202",
-  ip=>"192.168.1.202",
-  ssh_port=>22,
-  userid=>"ubuntu",
-  password=>"festum01",
-  application_config=>[{conbee,
-			[{conbee_addr,"172.17.0.2"},
-	   		 {conbee_port,80},	
-	                 {conbee_key,"24E285605D"}]}]
-}.
+#{id=>"c202",
+	hostname=>"c202",
+	host_node=>ctrl@c202,
+ 	application_config=>[]
+	}.
