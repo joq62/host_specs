@@ -1,5 +1,7 @@
 #{id=>"c50",
 	hostname=>"c50",
 	host_node=>ctrl@c50,
-	application_config=>[]
+	application_config=>[
+			     {app1,[{value1,v11},{value2,12}]},
+			     {app2,[{value1,v21},{value2,22}]}]
 	}.
