@@ -1,5 +1,8 @@
 #{id=>"c202",
 	hostname=>"c202",
 	host_node=>ctrl@c202,
- 	application_config=>[]
+ 	application_config=>[{conbee,
+			[{conbee_addr,"172.17.0.2"},
+	   		 {conbee_port,80},	
+	                 {conbee_key,"24E285605D"}]}]
 	}.
